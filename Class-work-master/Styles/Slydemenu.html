@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    body{
+      background-color: grey;
+      margin: 0px;
+          }
+          ul{
+            background-color: darkgray;
+            margin: 0px;
+            list-style: none;
+            padding: 0px;
+            width: 200px;
+            border-right: 20px solid green;
+            transform: translateX(-200px);
+          }
+  li:hover{
+    background-color: green;
+  }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      li{
+        padding: 20px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+      }
+#none{
+  border-bottom: none;
+}
+ul:hover{
+  transform: translateX(0px);
+}
+  </style>
+</head>
+<body>
+<ul>
+  <li><a href="">kent</a></li>
+  <li><a href="">pent</a></li>
+  <li><a href="">pont</a></li>
+  <li><a href="">font</a></li>
+  <li id="none"><a href="">rent</a></li>
+</ul>
+</body>
+</html>

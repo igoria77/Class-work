@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    /*global sryle*/
+    /* tag selector*/
+    body {
+      background-color: green;
+      color:blue;
+      width: 360px;
+  }
+p {
+  background-color: white;
+  width:100px;
+  height: 100px;
+  margin:10px;
+  float: left;
+}
+/* class*/
+.row {
+background-color: red
+
+  }
+  .col {
+    border-radius: 100px;
+  }
+  /* select by id*/
+#first {
+  border-radius: 100px 0px 0px 0px;
+}
+#last{
+  border-radius: 0px 0px 100px 0px;
+}
+  </style>
+</head>
+<body>
+<p id="first">1</p>
+<p class="col">2</p>
+<p>3</p>
+<p class="row">4</p>
+<p class="row col">5</p>
+<p class="row">6</p>
+<p>7</p>
+<p class="col">8</p>
+<p id="last">9</p>
+
+</body>
+</html>

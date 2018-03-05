@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+    body{
+      margin-top: 100px;
+      background-color: black;
+      width: auto;
+    }
+    img{
+      border: 5px
+      solid white;
+      width: 250px;
+      transition: 0.5s;
+    }
+    p{
+      text-align: center;
+      height: 50px;
+      margin: 0px;
+    }
+.moto{
+  transform: rotate(90deg);}
+  #peri{
+    transform: rotate(20deg) scale(1.5) translateX(50px);;;
+    box-shadow: 0 0 7px 2px red;
+  }
+  img:hover{
+    border-color: green;
+    transform: scale(2) rotate(3600deg)!important;
+    transition: 0.5s;
+  }
+  </style>
+</head>
+<body>
+  <p>
+    <img class="moto" src="IMG/1.jpg" alt="">
+    <img src="IMG/2.jpg" alt="">
+  </p>
+  <p>
+    <img src="IMG/3.jpg" alt="">
+  </p>
+  <p>
+    <img id="peri" src="IMG/4.jpg" alt="">
+    <img class="moto" src="IMG/5.jpg" alt="">
+  </p>
+
+</body>
+</html>
