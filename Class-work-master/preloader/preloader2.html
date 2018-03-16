@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style media="screen">
+                body {
+            background-color: aqua;
+        }
+
+        #preloader {
+            width: 100px;
+            height: 100px;
+            animation: rot 6s infinite linear;
+        }
+
+        #preloader:hover {
+            width: 100px;
+            height: 100px;
+            animation: rot 1s infinite linear;
+            animation: flash 1s infinite linear;
+        }
+
+        #preloader div {
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            float: left;
+            border: 1.5px solid aqua;
+        }
+
+        @keyframes flash {
+            from {
+                opacity: 1
+            }
+            to {
+                opacity: 0
+            }
+        }
+
+        #preloader div:nth-child(4n+1) {
+            animation: rot 2s infinite linear;
+        }
+
+        #preloader div:not(:nth-child(4n+1)) {
+            animation: rotinv 10s infinite linear;
+        }
+
+        @keyframes rot {
+            from {
+                transform: rotate(0deg)
+            }
+            to {
+                transform: rotate(360deg)
+            }
+            @keyframes rotinv {
+                from {
+                    transform: rotate(0deg)
+                }
+                to {
+                    transform: rotate(-360deg)
+                }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="preloader">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+
+</body>
+
+</html>

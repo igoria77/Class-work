@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            background-color: black;
+        }
+
+        #face {
+            background-color: yellow;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin: 100px;
+        }
+
+        .yse {
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            border-radius: 5px;
+            margin-top: 32px;
+        }
+
+        .yse:first-child {
+            float: left;
+            margin-left: 22px;
+        }
+
+        .mouthe {
+            width: 50px;
+            height: 20px;
+            border-radius: 100%;
+            float: left;
+            margin-top: 10px;
+            margin-left: 25px;
+            border-bottom: 10px solid red;
+        }
+
+        .yse:nth-child(2) {
+            float: right;
+            margin-right: 25px;
+        }
+
+        @keyframes wink {
+            from {
+                transform: scaleY(1.0)
+            }
+            to {
+                transform: scaleY(0.1)
+            }
+        }
+
+        .yse:first-child {
+            animation: wink 1s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="face">
+        <div class="yse"></div>
+        <div class="yse"></div>
+        <div class="mouthe"></div>
+    </div>
+
+</body>
+
+</html>

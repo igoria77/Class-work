@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style media="screen">
+body{
+  background-color: #222;
+}
+form{
+  background-color: #d88724;
+    padding: 30px 30px 30px 30px
+}
+input{
+  padding: 20px;
+  border-top-left-radius:  20px;
+  border-bottom-left-radius: 20px;
+  transition: 2s;
+  }
+  input:focus{
+    width: 300px;
+}
+.bug:focus{
+  width: 150px;
+  }
+button{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius:20px;
+  padding: 20px;
+}
+button:hover{
+  background-color: #5fd823;
+}
+button::before{
+  content: "["
+}
+button::after{
+  content: "]"
+}
+  </style>
+</head>
+<body>
+<form action="">
+  <input class="bug" type="text">
+  <button class="bug" type="button" name="button">Goooo</button>
+</form>
+
+</body>
+</html>

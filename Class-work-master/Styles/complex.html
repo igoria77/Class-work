@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            background-color: black;
+        }
+
+        body>div {
+            /*выбор div in body  */
+            background-color: red;
+            width: 400px;
+            height: 400px;
+        }
+
+        body>div>div {
+            background-color: green;
+            margin: 10px;
+            width: 180px;
+            height: 180px;
+            float: left;
+        }
+
+        body>div>div>div {
+            background-color: yellow;
+            margin: 5px;
+            width: 80px;
+            height: 80px;
+            float: left;
+        }
+
+        body>div>div:first-child>div:first-child {
+            background-color: #fff;
+        }
+
+        body>div>div:last-child>div:last-child {
+            background-color: #fff;
+        }
+
+        body>div>div:last-child>div:first-child {
+            background-color: #fff;
+        }
+
+        body>div>div:first-child>div:first-child:hover {
+            background-color: black;
+        }
+
+        body>div>div:nth-child(2)>div:nth-child(4) {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div>
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+        </div>
+        <div>
+            <div>13</div>
+            <div>14</div>
+            <div>15</div>
+            <div>16</div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+>
