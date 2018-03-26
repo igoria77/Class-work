@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style media="screen">
+        body {
+            background-color: #333;
+        }
+
+        #profile {
+            width: 300px;
+            height: 300px;
+            border-radius: 300px;
+            border: 5px solid green;
+            overflow: hidden;
+            box-shadow: 5px 5px 5px red;
+            transform: translate(0);
+        }
+
+        #photo {
+            width: 300px;
+            height: 300px;
+            border: 1px solid green;
+            background-image: url(http://i0.wp.com/www.shutupandtakemyyen.com/wp-content/uploads/2017/05/Avatar-Appa-Kigurumi.jpg?resize=300%2C300);
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.75;
+        }
+
+        #info {
+            width: 300px;
+            height: 260px;
+            border: 1px solid yellow;
+            transform: translateY(300px);
+            background-color: white;
+            text-align: center;
+            color: brown;
+            padding-top: 40px;
+        }
+
+        #profile:hover #info {
+            transform: none;
+            transition: 2s;
+        }
+
+        #profile:hover #photo {
+            opacity: 1;
+            transition: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="profile">
+        <div id="photo">
+            <div id="info">
+                <h3>Jone Doe</h>
+          <p>Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. Eius aliquid est,
+          <a href="htmp://facebook.com/page_of_john_doe">facebook</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
