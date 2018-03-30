@@ -1,0 +1,38 @@
+body {
+  height: 500px;
+  background-image: url("images/gbr.png");
+}
+
+#paper .slice {
+  width: 200px;
+  height: 600px;
+  border: 1px solid red;
+  position: absolute;
+}
+
+#paper .photo {
+  width: 800px;
+  height: 600px;
+  border: 1px solid red;
+  position: relative;
+  background-image: url("images/sity.jpg");
+}
+
+#paper .slice:nth-child(2) {
+  left: 200px;
+  background-position: -200px;
+}
+
+#paper .slice:nth-child(3) {
+  left: 400px;
+  ackground-position: -400px;
+}
+
+#paper .slice:nth-child(4) {
+  left: 600px;
+  ackground-position: -600px;
+}
+
+#paper .widgets {
+  display: none;
+}
