@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+
+  <style media="screen">
+
+  body{
+    background-color: #78b1eb;
+    font-family: Roboto;
+    margin: 0px;
+    padding: 0px;
+  }
+  nav{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: 5px;
+    display: table;
+  }
+  ul{
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    display: table-row;
+  }
+li,a{
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  color: #78b1eb;
+  font-size: 14px;
+}
+li{
+  background-color: #fff;
+  padding: 13px;
+ height: 30px;
+ vertical-align: middle;
+    /*float: left; 1 var*/
+  /*display: inline-block; 2 var*/
+  display: table-cell;
+
+}
+li:last-child{
+  width: 40px;
+  background-color: #1f6caf;
+  position: relative;
+}
+span{
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  display: block;
+  margin: 5px;
+  margin-left: 2px;
+  position: relative;
+
+}
+li:last-child::before{
+  content: "3";
+  display: block;
+  background-color: #1f6caf;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 3px solid #fff;
+  border-radius: 100%;
+  color: white;
+  text-align: center;
+  position: absolute;
+  right: 68px;
+  top: 14px;
+}
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="">Lorem</a></li>
+      <li><a href="">ipsum </a></li>
+      <li><a href="">dolor </a></li>
+      <li><a href="">sit </a></li>
+      <li><a href="">amet</a></li>
+      <li><a href="">consectetur</a></li>
+      <li><a href="">adipisicing</a></li>
+      <li><a href="">
+        <span></span>
+      <span></span>
+      <span></span></a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
