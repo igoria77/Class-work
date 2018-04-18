@@ -1,0 +1,58 @@
+body{
+  background-color: yellow;
+}
+nav li{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background-color: green;
+  transform-origin: 0 0;
+  border: 2px solid red;
+  overflow: hidden;
+
+}
+nav li a{
+  background-color: #054870;
+  color: black;
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 300px;
+  height: 300px;
+  display: block;
+  border-radius: 100%;
+  transform: skew(-45deg);
+}
+nav li a:hover {
+  background-color: #19b728;
+
+}
+nav{
+  position: relative;
+  top: 300px;
+  left: 300px;
+}
+nav li:nth-child(1){
+  transform:rotate(0deg) skew(45deg)
+}
+nav li:nth-child(2){
+transform:rotate(45deg) skew(45deg) ;
+}
+nav li:nth-child(3){
+transform:rotate(90deg) skew(45deg) ;
+}
+nav li:nth-child(4){
+transform:rotate(135deg) skew(45deg);
+}
+nav li:nth-child(5){
+transform:rotate(180deg) skew(45deg);
+}
+nav li:nth-child(6){
+transform:rotate(225deg) skew(45deg);
+}
+nav li:nth-child(7){
+transform:rotate(270deg) skew(45deg);
+}
+nav li:nth-child(8){
+transform:rotate(315deg) skew(45deg);
+}
