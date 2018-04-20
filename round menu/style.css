@@ -1,13 +1,16 @@
 body{
-  background-color: yellow;
+  background-color: #2621a9;
 }
 nav li{
   width: 300px;
   height: 300px;
   position: absolute;
+  top: 150px;
+  left: 150px;
+
   background-color: green;
   transform-origin: 0 0;
-  border: 2px solid red;
+  border: 1px solid red;
   overflow: hidden;
 
 }
@@ -24,7 +27,7 @@ nav li a{
   transform: skew(-45deg);
 }
 nav li a:hover {
-  background-color: #19b728;
+  background-image: radial-gradient(green,white 100%);
 
 }
 nav{
@@ -55,4 +58,69 @@ transform:rotate(270deg) skew(45deg);
 }
 nav li:nth-child(8){
 transform:rotate(315deg) skew(45deg);
+}
+nav a i {
+  position: absolute;
+  top: 188px;
+  left: 258px;
+
+}
+nav li:nth-child(1) i {
+  transform:rotate(0deg);
+}
+nav li:nth-child(2) i {
+  transform:rotate(-45deg);
+}
+nav li:nth-child(3) i {
+  transform:rotate(-90deg);
+}
+nav li:nth-child(4) i {
+  transform:rotate(180deg);
+}
+nav li:nth-child(5) i {
+  transform:rotate(0deg);
+}
+nav li:nth-child(6) i {
+  transform:rotate(135deg);
+}
+nav li:nth-child(7) i {
+  transform:rotate(0deg);
+}
+nav li:nth-child(8) i {
+  transform:rotate(45deg);
+}
+nav li a{
+  background-image: radial-gradient(black 25%,white 100%,black 0%);
+}
+nav ul{
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 50%;
+  }
+nav ul::after{
+  content: "\f2cd";
+  font-family: fontawesome;
+  font-size: 55px;
+  color: red;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 70px;
+  left: 70px;
+  display: block;
+  border-radius: 100%;
+  background-color: white;
+  text-align: center;
+  line-height: 160px;
+  box-shadow: 0 0 2px 2px red;
+  text-shadow: 0 0 15px black;
+
+}
+/*nav li:nth-child(7):hover~:last-child {*/
+nav ul:target::after{
+  color: yellow;
+
 }
