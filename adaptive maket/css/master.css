@@ -1,0 +1,44 @@
+/*Глобальные стили(для всех устройств) не зависят от устройтсва*/
+/*Стили для десктопа*/
+
+body{
+  background-color: gray;
+  padding: 0;
+}
+#profile{
+  border: 2px solid red;
+  width: 90%;
+  margin: 0 auto;
+}
+figure{
+  width: 40%;
+  margin: 0;
+  background-color: #9c4b61;
+  }
+
+footer{
+    width: 60%;
+    background-color: green;
+  }
+
+  #profile>figure>img{
+    width: 100%;
+
+  }
+
+#profile>figure, #profile>footer{
+  display: inline-block;
+  vertical-align: middle;
+  bottom: 0;
+
+}
+
+/*Стили для планшета*/
+@media screen and (max-width:600px) {
+#profile>figure,
+#profile>footer{
+    display: block;
+    width: 100%;
+
+  }
+}
