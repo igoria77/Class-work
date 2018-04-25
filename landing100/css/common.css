@@ -1,0 +1,28 @@
+body{
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+
+}
+a{
+  text-decoration: none;
+}
+nav a{
+  color: white;
+  font-size: 18px;
+}
+nav a small{
+  color: yellow;
+
+}
+nav .active{
+  color: orange;
+}
+
+
+.bg-transparent {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+nav div:last-child a:hover{
+  color: orange;
+  transition: 0.5s;
+}
