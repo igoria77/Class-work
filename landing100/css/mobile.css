@@ -1,9 +1,16 @@
-body{
-  background-color: red;
-}
+nav{
+  padding: 10px 3%;}
+
+  nav div{
+  display: inline-block;
+width: 50%;}
+
 nav div:last-child a{
   display: none;
 }
 nav div:last-child a:first-child{
   display: inline;
+}
+nav div:last-child{
+  text-align: right;
 }
