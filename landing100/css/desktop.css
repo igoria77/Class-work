@@ -27,8 +27,8 @@ margin-left: 2.5%;
 
 }
 nav:first-child a{
-  font-size: 30px;
-}
+  font-size: 30px;}
+
 nav div:last-child a{
   font-size: 18px;
 }

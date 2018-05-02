@@ -1,0 +1,45 @@
+#who{
+  background-color: yellow;
+  width: 90%;
+  margin-left: 5%;
+
+}
+#who h1,#who h3{
+  text-align: center;
+}
+#who h1{
+  top: 38px;
+
+}
+#who h3{
+  top: -38px;
+
+}
+#who h1::after{
+  content: "";
+  border-bottom: 2px solid #000;
+  display: block;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+}
+.col-left{
+  width: 60%;
+}
+.col-right{
+  width: 40%;
+  margin: 0px;
+}
+.col-left, .col-right{
+  display: inline-block;
+  vertical-align: top;
+
+}
+.tab{
+  display: none;
+  border: 2px dotted red;
+}
+.tab-selected{
+  display: block;
+}
