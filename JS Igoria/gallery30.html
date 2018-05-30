@@ -1,0 +1,21 @@
+<body style="text-align: center">
+<script type="text/javascript">
+var n=1;
+var w=200;
+var h=150;
+while(n<=9){
+
+if(n==9){
+  document.write('<img src="http://picsum.photos/''+(w)*3+'/'+(h)*4+'?image='+(n=n+9)+'" alt="" />')
+}
+
+else{
+  document.write('<img src="http://picsum.photos/'+w+'/'+h+'?image='+n+'" alt="" />')
+}
+if (n%4==0){
+document.write('<br>');
+}
+n++;
+}
+</script>
+</body>
