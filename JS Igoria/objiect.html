@@ -1,0 +1,24 @@
+  <script>
+    var nav = {
+      id: "main-navigation",
+      style: {
+        color:"red",
+        border:"1px solid black",
+        margin: "20px"
+      },
+      content: {
+        href:"https://habr.com/post/240375/",
+        text:"About us"
+      },
+      //metods()
+    render: function(){
+      document.write(
+        `<nav id="${this.id}">
+         <a href="${this.content.href}">${this.content.text}</a>
+         </nav>`);
+    }
+  };
+
+  nav.render();
+    //alert(nav.style.margin);
+    </script>

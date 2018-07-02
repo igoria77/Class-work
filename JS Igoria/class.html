@@ -1,0 +1,28 @@
+<script>
+//declare a CLASS
+class User{
+  //structire
+  constructor(email,login,avatar,password){
+      this.email=email;
+      this.login=login;
+      this.avatar=avatar;
+      if (password == undefined){
+      this.password="123456";
+      }else{
+        this.password = password;
+    }
+  }
+
+  render(){
+    document.write(`<h2>${this.login}</h2>\n<p><b>`);
+  }
+}
+//using the CLASS
+var user1=new User("iurik77","rerer","https://picsum.photos/100/100");"hgfhf")
+var user2=new User("murik88","dfdfg ","Qwert2");
+//console.log(user1);
+//console.log(user2);
+
+user1.render();
+
+</script>

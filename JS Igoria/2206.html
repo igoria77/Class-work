@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inheritance</title>
+</head>
+<body>
+<script type="text/javascript">
+//base class/superclass
+  class Car{
+    //structure
+    //brand,model,year,power
+    constructor(){
+      this.brand = "Marcedes";
+    }
+    about(){
+      alert(`This is a ${this.brand}-Car!!!`);
+    }
+    render(){
+      //to HTML
+    }
+  }
+//extended class/inheriting
+class SportCar extends Car{
+  //acceleration
+  //  about(){
+  //  alert("This is a SportCAR!!!");
+  //}
+}
+/////////// creating object
+var c = new Car();
+c.about();
+var sc = new SportCar();
+sc.about();
+
+//class HeavyCar extends Car{
+//capacity
+}
+//class MilitaryCar extends Car{
+//armour
+}
+//             --->  SportCar    --> Object1,Object2
+//Objec -> Car --->  HeavyCar    --> Object1,Object2
+//             --->  MilitaryCar --> Object1,Object2
+
+</script>
+
+</body>
+</html>
