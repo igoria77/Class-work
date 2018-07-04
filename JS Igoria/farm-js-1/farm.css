@@ -1,0 +1,18 @@
+#farm{
+  height: 50px;
+  border-bottom: 5px solid green;
+}
+#farm .box{
+  border: 1px solid #cdc;
+  width: 48px;
+  height: 48px;
+  float: left;
+}
+#farm .corn{
+  background-image: url(corn.png);
+  background-size: cover;
+}
+#farm .potato{
+  background-image: url(potato.png);
+  background-size: cover;
+}
