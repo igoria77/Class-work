@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <h1><i>DOM</i><small>Hierarchy Example</small></h1>
+  <h2>Some Tips</h2>
+  <ul>
+    <li>.parentElement</li>
+    <li>.previousElementSibling</li>
+    <li>.nextElementSibling</li>
+    <li>.children[]</li>
+    <li>.firstElementChild</li>
+    <li>.lastElementChild</li>
+  </ul>
+  <script type="text/javascript">
+    // 1) read content of h2 .innerHTML
+    document.body.children[1].innerHTML
+    document.body.firstElementChild.nextElementSibling.innerHTML
+    // 2) content <i>
+    document.body.children[0].children[0].innerHTML
+
+    // 3) content <li> -5 th
+    document.body.children[2].children[4]
+    document.body.children[2].lastElementChild.previousElementSibling
+    // - long code
+    // - not dinamic
+    // + speed
+  </script>
+</body>
+</html>
