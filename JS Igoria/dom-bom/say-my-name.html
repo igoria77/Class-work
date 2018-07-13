@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dom Example</title>
+</head>
+<body>
+  <input type="text" placeholder="your name pls...">
+  <button onclick = "say();">Say IT!</button>
+  <div id="message">
+    <script>
+      function say(){
+        var input = document.body.firstElementChild;
+        // document.querySelector('input');
+        var name = input.value;
+        var div = document.getElementById('message');
+        div.innerHTML = `Hello, ${name}!`;
+        // alert(input.value)
+//Выводить нелло если введено имя.
+// если имя не задано в красный цвет
+      }
+    </scrip>
+  </div>
+</body>
+</html>
