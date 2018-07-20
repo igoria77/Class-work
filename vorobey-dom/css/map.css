@@ -1,0 +1,16 @@
+body {
+  background-color: #292;
+}
+#map{
+  width: 500px;
+  height: 500px;
+  border: 5px solid red;
+  cursor: url(../img/target.png) 24 24, auto;)
+
+}
+
+#panel{
+height: 30px;
+width: 510px;
+background: white;
+}
